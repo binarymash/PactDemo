@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMash.PactDemo.Client", "BinaryMash.PactDemo.Client\BinaryMash.PactDemo.Client.csproj", "{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMash.PactDemo.Model", "BinaryMash.PactDemo.Model\BinaryMash.PactDemo.Model.csproj", "{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMash.PactDemo.Client.Tests", "BinaryMash.PactDemo.Client.Tests\BinaryMash.PactDemo.Client.Tests.csproj", "{46E849C5-9DE1-4379-AA77-FC25F30F9F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMash.PactDemo.Server", "BinaryMash.PactDemo.Server\BinaryMash.PactDemo.Server.csproj", "{DFA14A78-A771-4E69-88DE-8496144377EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMash.PactDemo.Server.Tests", "BinaryMash.PactDemo.Server.Tests\BinaryMash.PactDemo.Server.Tests.csproj", "{5A5EDDA8-7BAA-4F2C-BDA2-63F979DC575F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E849C5-9DE1-4379-AA77-FC25F30F9F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E849C5-9DE1-4379-AA77-FC25F30F9F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E849C5-9DE1-4379-AA77-FC25F30F9F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E849C5-9DE1-4379-AA77-FC25F30F9F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA14A78-A771-4E69-88DE-8496144377EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA14A78-A771-4E69-88DE-8496144377EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA14A78-A771-4E69-88DE-8496144377EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA14A78-A771-4E69-88DE-8496144377EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5EDDA8-7BAA-4F2C-BDA2-63F979DC575F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5EDDA8-7BAA-4F2C-BDA2-63F979DC575F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5EDDA8-7BAA-4F2C-BDA2-63F979DC575F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5EDDA8-7BAA-4F2C-BDA2-63F979DC575F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

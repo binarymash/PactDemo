@@ -1,0 +1,12 @@
+											consumer unit	provider unit	integration
+fewer querystring sent by consumer
+extra querystring sent by consumer			FAIL			pass			pass
+fewer headers sent by consumer
+extra headers sent by consumer				pass			pass			pass
+less body content sent by consumer
+more body content sent by consumer
+
+fewer headers returned by provider
+extra headers returned by provider			pass			pass			pass
+less body content returned by provider
+more body content returned by provider		pass			pass			
