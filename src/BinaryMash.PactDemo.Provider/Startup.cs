@@ -11,7 +11,10 @@ namespace BinaryMash.PactDemo.Provider
         public void Configuration(IAppBuilder app)
         {
             var webApiConfiguration = ConfigureWebApi();
-            app.Use(typeof(AddHeader));
+
+            //MOD-2 - extra header returned by provider
+            //app.Use(typeof(AddHeader));
+
             app.UseWebApi(webApiConfiguration);
 
             //HttpConfiguration config = new HttpConfiguration();

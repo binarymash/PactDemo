@@ -3,7 +3,7 @@ using Microsoft.Owin;
 
 namespace BinaryMash.PactDemo.Provider
 {
-    public class AddHeader :OwinMiddleware
+    public class AddHeader : OwinMiddleware
     {
         private readonly OwinMiddleware _next;
 
