@@ -1,9 +1,10 @@
 ﻿using System.Web.Http;
-using BinaryMash.PactDemo.Server.Windsor.Installers;
+using BinaryMash.PactDemo.Provider.Windsor;
+using BinaryMash.PactDemo.Provider.Windsor.Installers;
 using Castle.Windsor;
 using Owin;
 
-namespace BinaryMash.PactDemo.Server
+namespace BinaryMash.PactDemo.Provider
 {
     public class Startup
     {

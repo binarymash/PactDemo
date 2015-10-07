@@ -3,9 +3,9 @@ using System.Linq;
 using System.Net;
 using System.Web.Http;
 using BinaryMash.PactDemo.Provider.Model;
-using BinaryMash.PactDemo.Server.Repositories;
+using BinaryMash.PactDemo.Provider.Repositories;
 
-namespace BinaryMash.PactDemo.Server.Controllers
+namespace BinaryMash.PactDemo.Provider.Controllers
 {
 
     public class SomethingsController : ApiController

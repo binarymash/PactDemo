@@ -1,9 +1,8 @@
-﻿using System;
-using System.Web.Http;
-using BinaryMash.PactDemo.Server.Repositories;
+﻿using System.Web.Http;
+using BinaryMash.PactDemo.Provider.Repositories;
 using Version = BinaryMash.PactDemo.Provider.Model.Version;
 
-namespace BinaryMash.PactDemo.Server.Controllers
+namespace BinaryMash.PactDemo.Provider.Controllers
 {
     public class VersionController : ApiController
     {

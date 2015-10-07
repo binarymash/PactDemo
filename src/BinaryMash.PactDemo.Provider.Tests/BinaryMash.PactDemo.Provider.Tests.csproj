@@ -8,8 +8,8 @@
     <ProjectGuid>{5A5EDDA8-7BAA-4F2C-BDA2-63F979DC575F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinaryMash.PactDemo.Server.Tests</RootNamespace>
-    <AssemblyName>BinaryMash.PactDemo.Server.Tests</AssemblyName>
+    <RootNamespace>BinaryMash.PactDemo.Provider.Tests</RootNamespace>
+    <AssemblyName>BinaryMash.PactDemo.Provider.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -99,13 +99,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinaryMash.PactDemo.Server\BinaryMash.PactDemo.Server.csproj">
-      <Project>{DFA14A78-A771-4E69-88DE-8496144377EA}</Project>
-      <Name>BinaryMash.PactDemo.Server</Name>
-    </ProjectReference>
+    <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="logs\" />
+    <ProjectReference Include="..\BinaryMash.PactDemo.Provider\BinaryMash.PactDemo.Provider.csproj">
+      <Project>{dfa14a78-a771-4e69-88de-8496144377ea}</Project>
+      <Name>BinaryMash.PactDemo.Provider</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

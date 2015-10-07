@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BinaryMash.PactDemo.Provider.Model;
 
-namespace BinaryMash.PactDemo.Server.Repositories
+namespace BinaryMash.PactDemo.Provider.Repositories
 {
     public interface ISomethingRepository
     {

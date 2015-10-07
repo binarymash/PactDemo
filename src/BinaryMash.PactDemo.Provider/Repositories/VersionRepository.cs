@@ -1,7 +1,7 @@
 ﻿using System;
 using Version = BinaryMash.PactDemo.Provider.Model.Version;
 
-namespace BinaryMash.PactDemo.Server.Repositories
+namespace BinaryMash.PactDemo.Provider.Repositories
 {
     public interface IVersionRepository
     {

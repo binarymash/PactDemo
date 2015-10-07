@@ -2,7 +2,7 @@
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace BinaryMash.PactDemo.Server.Windsor.Installers
+namespace BinaryMash.PactDemo.Provider.Windsor.Installers
 {
     public class Installer : IWindsorInstaller
     {

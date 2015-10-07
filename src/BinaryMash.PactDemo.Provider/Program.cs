@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
 
-namespace BinaryMash.PactDemo.Server
+namespace BinaryMash.PactDemo.Provider
 {
     class Program
     {

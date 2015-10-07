@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsumerMyApiPact.cs" />
-    <Compile Include="Integration\Temp.cs" />
+    <Compile Include="Integration\SomethingApiConsumerScenarios.cs" />
     <Compile Include="PactDefinitions\GetSomethings.cs" />
     <Compile Include="PactDefinitions\GetVersion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

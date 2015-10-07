@@ -3,7 +3,7 @@ using Microsoft.Owin.Testing;
 using PactNet;
 using Xunit;
 
-namespace BinaryMash.PactDemo.Server.Tests
+namespace BinaryMash.PactDemo.Provider.Tests
 {
     public class SomethingApiTests
     {
