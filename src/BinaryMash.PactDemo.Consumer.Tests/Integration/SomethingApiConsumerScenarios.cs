@@ -1,10 +1,12 @@
 ﻿using Xunit;
 namespace BinaryMash.PactDemo.Consumer.Tests.Integration
 {
+    /// <summary>
+    /// These tests only pass when the provider is running
+    /// </summary>
     public class Temp
     {
-        [Fact(Skip="Run manually when the provider is running")]
-        //[Fact]
+        [Fact]
         public void GetVersion()
         {
             var client = new CustomerApiConsumer("http://localhost:8080");
@@ -12,8 +14,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests.Integration
             Assert.Equal("1.2.3.4", version.Build);
         }
 
-        [Fact(Skip="Run manually when the provider is running")]
-        //[Fact]
+        [Fact]
         public void GetCustomer()
         {
             var client = new CustomerApiConsumer("http://localhost:8080");

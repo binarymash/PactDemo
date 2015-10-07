@@ -48,9 +48,13 @@ namespace BinaryMash.PactDemo.Consumer
         {
             string reasonPhrase;
 
+            var uri = "/api/version";
+
+            //MOD-4 - consumer sends extra query string
+            //uri += "?abc=def";
+
             using (var httpClient = new HttpClient { BaseAddress = new Uri(BaseUri) })
-            //using (var request = new HttpRequestMessage(HttpMethod.Get, "/api/version?abc=def"))
-            using (var request = new HttpRequestMessage(HttpMethod.Get, "/api/version"))
+            using (var request = new HttpRequestMessage(HttpMethod.Get, uri))
             {
                 request.Headers.Add("Accept", "application/json");
 
