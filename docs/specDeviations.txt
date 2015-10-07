@@ -1,13 +1,15 @@
-										|			| consumer unit | provider unit	| integration
-----------------------------------------+-----------+---------------+---------------+---------------
-fewer querystring sent by consumer		|			|				|				|
-extra querystring sent by consumer		|			| FAIL			| pass			| pass
-fewer headers sent by consumer			|			|				|				|
-extra headers sent by consumer			|			| pass			| pass			| pass
-less body content sent by consumer		|			|				|				|
-more body content sent by consumer		|			|				|				|
-----------------------------------------+-----------+---------------+---------------+---------------
-fewer headers returned by provider		+			|				|				|
-extra headers returned by provider		| (MOD-2)	| pass			| pass			| pass
-less body content returned by provider	|			| FAIL			|				|
-more body content returned by provider 	| (MOD-1)	| pass			| pass			|			
+										| MOD	| consumer unit | provider unit	| real interaction
+----------------------------------------+-------+---------------+---------------+---------------
+extra querystring sent by consumer		|		| FAIL			| pass			| pass
+extra headers sent by consumer			| MOD-3	| pass			| pass			| pass
+more body content sent by consumer		|		|				|				|
+----------------------------------------+-------+---------------+---------------+---------------
+fewer querystring sent by consumer		|		|				|				|
+fewer headers sent by consumer			|		|				|				|
+less body content sent by consumer		|		|				|				|
+----------------------------------------+-------+---------------+---------------+---------------
+extra headers returned by provider		| MOD-2	| pass			| pass			| pass
+more body content returned by provider 	| MOD-1	| pass			| pass			|			
+----------------------------------------+-------+---------------+---------------+--------------
+fewer headers returned by provider		+		|				|				|
+less body content returned by provider	|		| FAIL			|				|
