@@ -19,7 +19,7 @@ namespace BinaryMash.PactDemo.Server.Tests
                 pactVerifier = pactVerifier
                     .ServiceProvider("Something API", testServer.HttpClient)
                     .HonoursPactWith("Consumer")
-                    .PactUri("../../../BinaryMash.PactDemo.Client.Tests/pacts/consumer-something_api.json");
+                    .PactUri("../../../BinaryMash.PactDemo.Consumer.Tests/pacts/consumer-something_api.json");
 
                 pactVerifier.Verify();
             }

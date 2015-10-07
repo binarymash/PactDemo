@@ -3,7 +3,7 @@ using System.Net;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
 
-namespace BinaryMash.PactDemo.Client.Tests.PactDefinitions
+namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
 {
     public static class GetVersion
     {

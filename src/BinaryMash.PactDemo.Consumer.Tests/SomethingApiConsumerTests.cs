@@ -2,7 +2,7 @@
 using PactNet.Mocks.MockHttpService;
 using Xunit;
 
-namespace BinaryMash.PactDemo.Client.Tests
+namespace BinaryMash.PactDemo.Consumer.Tests
 {
     public class SomethingApiConsumerTests : IClassFixture<ConsumerMyApiPact>
     {
@@ -21,7 +21,7 @@ namespace BinaryMash.PactDemo.Client.Tests
         {
             //Given
             PactDefinitions.GetSomethings.CreateOn(this.mockProviderService);                
-            var consumer = new SomethingApiClient(this.mockProviderServiceBaseUri);
+            var consumer = new SomethingApiConsumer(this.mockProviderServiceBaseUri);
 
             //When
             var result = consumer.GetSomething("tester");
@@ -36,7 +36,7 @@ namespace BinaryMash.PactDemo.Client.Tests
         {
             //Given
             PactDefinitions.GetVersion.CreateOn(this.mockProviderService);
-            var consumer = new SomethingApiClient(this.mockProviderServiceBaseUri);
+            var consumer = new SomethingApiConsumer(this.mockProviderServiceBaseUri);
 
             //When
             var result = consumer.GetVersion();

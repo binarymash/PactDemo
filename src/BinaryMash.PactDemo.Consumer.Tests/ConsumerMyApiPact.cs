@@ -2,7 +2,7 @@
 using PactNet;
 using PactNet.Mocks.MockHttpService;
 
-namespace BinaryMash.PactDemo.Client.Tests
+namespace BinaryMash.PactDemo.Consumer.Tests
 {
     public class ConsumerMyApiPact : IDisposable
     {

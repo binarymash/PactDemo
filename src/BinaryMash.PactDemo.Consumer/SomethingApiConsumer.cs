@@ -5,13 +5,13 @@ using BinaryMash.PactDemo.Consumer.Model;
 using Newtonsoft.Json;
 using Version = BinaryMash.PactDemo.Consumer.Model.Version;
 
-namespace BinaryMash.PactDemo.Client
+namespace BinaryMash.PactDemo.Consumer
 {
-    public class SomethingApiClient
+    public class SomethingApiConsumer
     {
         public string BaseUri { get; set; }
 
-        public SomethingApiClient(string baseUri = null)
+        public SomethingApiConsumer(string baseUri = null)
         {
             BaseUri = baseUri ?? "http://my-api";
         }

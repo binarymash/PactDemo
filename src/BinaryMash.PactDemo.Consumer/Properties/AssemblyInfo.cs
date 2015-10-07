@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BinaryMash.PactDemo.Client.Tests")]
+[assembly: AssemblyTitle("BinaryMash.PactDemo.Consumer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BinaryMash.PactDemo.Client.Tests")]
+[assembly: AssemblyProduct("BinaryMash.PactDemo.Consumer")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("46e849c5-9de1-4379-aa77-fc25f30f9f79")]
+[assembly: Guid("abe8c02d-b7cd-4d1b-9978-1ec0151782a6")]
 
 // Version information for an assembly consists of the following four values:
 //

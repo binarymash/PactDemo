@@ -7,8 +7,8 @@
     <ProjectGuid>{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinaryMash.PactDemo.Client</RootNamespace>
-    <AssemblyName>BinaryMash.PactDemo.Client</AssemblyName>
+    <RootNamespace>BinaryMash.PactDemo.Consumer</RootNamespace>
+    <AssemblyName>BinaryMash.PactDemo.Consumer</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SomethingApiClient.cs" />
+    <Compile Include="SomethingApiConsumer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
