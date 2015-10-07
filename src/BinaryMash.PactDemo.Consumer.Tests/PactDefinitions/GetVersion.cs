@@ -7,9 +7,9 @@ namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
 {
     public static class GetVersion
     {
-        public static void CreateOn(IMockProviderService somethingApi)
+        public static void CreateOn(IMockProviderService customerApi)
         {
-            somethingApi
+            customerApi
                 .Given("Version is 1.2.3.4")
                 .UponReceiving("A GET request to retrieve the version")
                 .With(new ProviderServiceRequest

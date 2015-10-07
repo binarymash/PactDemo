@@ -4,12 +4,12 @@ using Xunit;
 
 namespace BinaryMash.PactDemo.Consumer.Tests
 {
-    public class SomethingApiConsumerTests : IClassFixture<ConsumerMyApiPact>
+    public class CustomerApiConsumerTests : IClassFixture<ConsumerMyApiPact>
     {
         private readonly IMockProviderService mockProviderService;
         private readonly string mockProviderServiceBaseUri;
 
-        public SomethingApiConsumerTests(ConsumerMyApiPact consumerMyApiPact)
+        public CustomerApiConsumerTests(ConsumerMyApiPact consumerMyApiPact)
         {
             this.mockProviderService = consumerMyApiPact.MockProviderService;
             this.mockProviderServiceBaseUri = consumerMyApiPact.MockProviderServiceBaseUri;
@@ -17,14 +17,14 @@ namespace BinaryMash.PactDemo.Consumer.Tests
         }
 
         [Fact]
-        public void GettingSomethingThatExists()
+        public void GettingCustomerThatExists()
         {
             //Given
-            PactDefinitions.GetSomethings.CreateOn(this.mockProviderService);                
-            var consumer = new SomethingApiConsumer(this.mockProviderServiceBaseUri);
+            PactDefinitions.GetCustomer.CreateOn(this.mockProviderService);                
+            var consumer = new CustomerApiConsumer(this.mockProviderServiceBaseUri);
 
             //When
-            var result = consumer.GetSomething("tester");
+            var result = consumer.GetCustomer("tester");
 
             //Then
             Assert.Equal("tester", result.Id);
@@ -36,7 +36,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests
         {
             //Given
             PactDefinitions.GetVersion.CreateOn(this.mockProviderService);
-            var consumer = new SomethingApiConsumer(this.mockProviderServiceBaseUri);
+            var consumer = new CustomerApiConsumer(this.mockProviderServiceBaseUri);
 
             //When
             var result = consumer.GetVersion();

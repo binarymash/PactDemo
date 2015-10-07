@@ -7,21 +7,21 @@ using Version = BinaryMash.PactDemo.Consumer.Model.Version;
 
 namespace BinaryMash.PactDemo.Consumer
 {
-    public class SomethingApiConsumer
+    public class CustomerApiConsumer
     {
         public string BaseUri { get; set; }
 
-        public SomethingApiConsumer(string baseUri = null)
+        public CustomerApiConsumer(string baseUri = null)
         {
             BaseUri = baseUri ?? "http://my-api";
         }
 
-        public Something GetSomething(string id)
+        public Customer GetCustomer(string id)
         {
             string reasonPhrase;
 
             using (var httpClient = new HttpClient { BaseAddress = new Uri(BaseUri) })
-            using (var request = new HttpRequestMessage(HttpMethod.Get, "/api/somethings/" + id))
+            using (var request = new HttpRequestMessage(HttpMethod.Get, "/api/customers/" + id))
             {
                 request.Headers.Add("Accept", "application/json");
                 using (var response = httpClient.SendAsync(request))
@@ -35,7 +35,7 @@ namespace BinaryMash.PactDemo.Consumer
                     if (status == HttpStatusCode.OK)
                     {
                         return !string.IsNullOrEmpty(content)
-                            ? JsonConvert.DeserializeObject<Something>(content)
+                            ? JsonConvert.DeserializeObject<Customer>(content)
                             : null;
                     }
                 }

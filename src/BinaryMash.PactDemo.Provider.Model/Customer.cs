@@ -1,6 +1,6 @@
 ﻿namespace BinaryMash.PactDemo.Provider.Model
 {
-    public class Something
+    public class Customer
     {
 		public string Id { get; set; }
 

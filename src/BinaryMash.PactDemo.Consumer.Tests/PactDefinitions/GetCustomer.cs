@@ -5,17 +5,17 @@ using PactNet.Mocks.MockHttpService.Models;
 
 namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
 {
-    public static class GetSomethings
+    public static class GetCustomer
     {
-        public static void CreateOn(IMockProviderService somethingApi)
+        public static void CreateOn(IMockProviderService customerApi)
         {
-            somethingApi
-                .Given("There is a something with ID tester")
-                .UponReceiving("A GET request to retrieve the something")
+            customerApi
+                .Given("There is a customer with ID tester")
+                .UponReceiving("A GET request to retrieve the customer")
                 .With(new ProviderServiceRequest
                 {
                     Method = HttpVerb.Get,
-                    Path = "/api/somethings/tester",
+                    Path = "/api/customers/tester",
                     Headers = new Dictionary<string, string>
                     {
                         {"Accept", "application/json" }

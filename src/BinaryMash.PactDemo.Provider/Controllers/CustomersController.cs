@@ -8,25 +8,25 @@ using BinaryMash.PactDemo.Provider.Repositories;
 namespace BinaryMash.PactDemo.Provider.Controllers
 {
 
-    public class SomethingsController : ApiController
+    public class CustomersController : ApiController
     {
-        public SomethingsController(ISomethingRepository repository)
+        public CustomersController(ICustomerRepository repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public Something Get(string id)
+        public Customer Get(string id)
         {
-            var something = _repository.GetAll().First(s => s.Id.Equals(id, StringComparison.OrdinalIgnoreCase));
-            if (something == null)
+            var customer = _repository.GetAll().First(s => s.Id.Equals(id, StringComparison.OrdinalIgnoreCase));
+            if (customer == null)
             {
                 throw new HttpResponseException(HttpStatusCode.NotFound);
             }
 
-            return something;
+            return customer;
         }
 
-        private readonly ISomethingRepository _repository;
+        private readonly ICustomerRepository _repository;
     }
 }

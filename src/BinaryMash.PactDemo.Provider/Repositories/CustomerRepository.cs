@@ -4,23 +4,23 @@ using BinaryMash.PactDemo.Provider.Model;
 
 namespace BinaryMash.PactDemo.Provider.Repositories
 {
-    public interface ISomethingRepository
+    public interface ICustomerRepository
     {
-        IQueryable<Something> GetAll();
+        IQueryable<Customer> GetAll();
     }
 
-    public class SomethingRepository : ISomethingRepository
+    public class CustomerRepository : ICustomerRepository
     {
         
-        private readonly List<Something> somethings = new List<Something>
+        private readonly List<Customer> customers = new List<Customer>
         {
-            new Something
+            new Customer
             {
                 Id = "tester",
                 FirstName = "Totally",
                 LastName = "Awesome"
             },
-            new Something
+            new Customer
             {
                 Id = "abc",
                 FirstName = "def",
@@ -28,9 +28,9 @@ namespace BinaryMash.PactDemo.Provider.Repositories
             }
         };
 
-        public IQueryable<Something> GetAll()
+        public IQueryable<Customer> GetAll()
         {
-            return somethings.AsQueryable();
+            return customers.AsQueryable();
         }
     }
 }

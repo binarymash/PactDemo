@@ -20,7 +20,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests
 
             PactBuilder = new PactBuilder()
                 .ServiceConsumer("Consumer")
-                .HasPactWith("Something API");
+                .HasPactWith("Customer API");
 
             ConfigureMockProvider();
         }
