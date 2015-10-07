@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BinaryMash.PactDemo.Model;
+using BinaryMash.PactDemo.Provider.Model;
 
 namespace BinaryMash.PactDemo.Server.Repositories
 {
     public interface ISomethingRepository
     {
-        IQueryable<Model.Something> GetAll();
+        IQueryable<Something> GetAll();
     }
 
     public class SomethingRepository : ISomethingRepository
     {
         
-        private readonly List<Model.Something> somethings = new List<Model.Something>
+        private readonly List<Something> somethings = new List<Something>
         {
-            new Model.Something
+            new Something
             {
                 Id = "tester",
                 FirstName = "Totally",
                 LastName = "Awesome"
             },
-            new Model.Something
+            new Something
             {
                 Id = "abc",
                 FirstName = "def",

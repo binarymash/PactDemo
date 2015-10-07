@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BinaryMash.PactDemo.Model
+namespace BinaryMash.PactDemo.Consumer.Model
 {
     public class Version 
     {

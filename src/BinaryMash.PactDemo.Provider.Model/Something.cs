@@ -1,4 +1,4 @@
-﻿namespace BinaryMash.PactDemo.Model
+﻿namespace BinaryMash.PactDemo.Provider.Model
 {
     public class Something
     {

@@ -91,9 +91,9 @@
       <Project>{ABE8C02D-B7CD-4D1B-9978-1EC0151782A6}</Project>
       <Name>BinaryMash.PactDemo.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BinaryMash.PactDemo.Model\BinaryMash.PactDemo.Model.csproj">
+    <ProjectReference Include="..\BinaryMash.PactDemo.Consumer.Model\BinaryMash.PactDemo.Consumer.Model.csproj">
       <Project>{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}</Project>
-      <Name>BinaryMash.PactDemo.Model</Name>
+      <Name>BinaryMash.PactDemo.Consumer.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

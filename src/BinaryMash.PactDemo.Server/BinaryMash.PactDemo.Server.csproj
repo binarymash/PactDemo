@@ -101,9 +101,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinaryMash.PactDemo.Model\BinaryMash.PactDemo.Model.csproj">
-      <Project>{A435100D-EEB4-4DD5-B7E6-F851CCB8110A}</Project>
-      <Name>BinaryMash.PactDemo.Model</Name>
+    <ProjectReference Include="..\BinaryMash.PactDemo.Provider.Model\BinaryMash.PactDemo.Provider.Model.csproj">
+      <Project>{a154d3ba-0147-4674-bfca-0852451bf03d}</Project>
+      <Name>BinaryMash.PactDemo.Provider.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

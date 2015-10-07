@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Http;
 using BinaryMash.PactDemo.Server.Repositories;
-using Version = BinaryMash.PactDemo.Model.Version;
+using Version = BinaryMash.PactDemo.Provider.Model.Version;
 
 namespace BinaryMash.PactDemo.Server.Controllers
 {

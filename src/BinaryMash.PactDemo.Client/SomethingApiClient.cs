@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
-using BinaryMash.PactDemo.Model;
+using BinaryMash.PactDemo.Consumer.Model;
 using Newtonsoft.Json;
+using Version = BinaryMash.PactDemo.Consumer.Model.Version;
 
 namespace BinaryMash.PactDemo.Client
 {
@@ -43,7 +44,7 @@ namespace BinaryMash.PactDemo.Client
             throw new Exception(reasonPhrase);
         }
 
-        public Model.Version GetVersion()
+        public Version GetVersion()
         {
             string reasonPhrase;
 
@@ -65,7 +66,7 @@ namespace BinaryMash.PactDemo.Client
                     if (status == HttpStatusCode.OK)
                     {
                         return !string.IsNullOrEmpty(content)
-                            ? JsonConvert.DeserializeObject<Model.Version>(content)
+                            ? JsonConvert.DeserializeObject<Version>(content)
                             : null;
                     }
                 }

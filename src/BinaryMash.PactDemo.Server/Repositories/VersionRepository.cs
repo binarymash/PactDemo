@@ -1,5 +1,5 @@
 ﻿using System;
-using Version = BinaryMash.PactDemo.Model.Version;
+using Version = BinaryMash.PactDemo.Provider.Model.Version;
 
 namespace BinaryMash.PactDemo.Server.Repositories
 {
