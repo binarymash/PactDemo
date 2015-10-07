@@ -8,6 +8,7 @@ namespace BinaryMash.PactDemo.Provider.Model
 
         public DateTime Date { get; set; }
 
-        public string Branch { get; set; }
+        //MOD-1 - provider returns a new parameter
+        //public string Branch { get; set; }
     }
 }

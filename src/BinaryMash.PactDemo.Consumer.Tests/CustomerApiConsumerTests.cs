@@ -4,12 +4,12 @@ using Xunit;
 
 namespace BinaryMash.PactDemo.Consumer.Tests
 {
-    public class CustomerApiConsumerTests : IClassFixture<ConsumerMyApiPact>
+    public class CustomerApiConsumerTests : IClassFixture<ConsumerCustomerApiPact>
     {
         private readonly IMockProviderService mockProviderService;
         private readonly string mockProviderServiceBaseUri;
 
-        public CustomerApiConsumerTests(ConsumerMyApiPact consumerMyApiPact)
+        public CustomerApiConsumerTests(ConsumerCustomerApiPact consumerMyApiPact)
         {
             this.mockProviderService = consumerMyApiPact.MockProviderService;
             this.mockProviderServiceBaseUri = consumerMyApiPact.MockProviderServiceBaseUri;

@@ -16,12 +16,12 @@ namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
                 {
                     Method = HttpVerb.Get,
                     Path="/api/version",
-                    Headers=new Dictionary<string, string>()
+                    Headers=new Dictionary<string, string>
                     {
                         { "Accept","application/json"}
                     }
                 })
-                .WillRespondWith(new ProviderServiceResponse()
+                .WillRespondWith(new ProviderServiceResponse
                 {
                     Status = (int)HttpStatusCode.OK,
                     Headers = new Dictionary<string, string>

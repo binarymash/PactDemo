@@ -4,7 +4,7 @@ using PactNet.Mocks.MockHttpService;
 
 namespace BinaryMash.PactDemo.Consumer.Tests
 {
-    public class ConsumerMyApiPact : IDisposable
+    public class ConsumerCustomerApiPact : IDisposable
     {
         public IPactBuilder PactBuilder { get; private set; }
 
@@ -14,7 +14,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests
 
         public string MockProviderServiceBaseUri => $"http://localhost:{MockServerPort}";
 
-        public ConsumerMyApiPact()
+        public ConsumerCustomerApiPact()
         {
             //PactBuilder = new PactBuilder(new PactConfig { PactDir = @"..\pacts", LogDir = @"c:\temp\logs" }); //Configures the PactDir and/or LogDir.
 

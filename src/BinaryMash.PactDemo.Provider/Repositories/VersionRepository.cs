@@ -16,7 +16,8 @@ namespace BinaryMash.PactDemo.Provider.Repositories
             {
                 Build = "1.2.3.4",
                 Date = new DateTime(2015, 09, 17, 20, 29, 13),
-                Branch = "Release"
+                //MOD-1 - provider returns a new parameter
+                //Branch = "Release"
             };
         }
     }

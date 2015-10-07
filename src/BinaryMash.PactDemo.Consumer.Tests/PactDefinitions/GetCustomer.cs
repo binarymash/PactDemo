@@ -35,7 +35,6 @@ namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
                         LastName = "Awesome"
                     }
                 }); //NOTE: WillRespondWith call must come last as it will register the interaction
-
         }
     }
 }
