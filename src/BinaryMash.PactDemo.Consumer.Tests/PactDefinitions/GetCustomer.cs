@@ -18,7 +18,8 @@ namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
                     Path = "/api/customers/tester",
                     Headers = new Dictionary<string, string>
                     {
-                        {"Accept", "application/json" }
+                        {"Accept", "application/json"},
+                        {"Another", "header"}
                     }
                 })
                 .WillRespondWith(new ProviderServiceResponse
@@ -26,7 +27,8 @@ namespace BinaryMash.PactDemo.Consumer.Tests.PactDefinitions
                     Status = (int)HttpStatusCode.OK,
                     Headers = new Dictionary<string, string>
                     {
-                        {"Content-Type", "application/json; charset=utf-8" }
+                        {"Content-Type", "application/json; charset=utf-8" },
+                        {"Another", "header"}
                     },
                     Body = new //NOTE: Note the case sensitivity here, the body will be serialised as per the casing defined
                     {

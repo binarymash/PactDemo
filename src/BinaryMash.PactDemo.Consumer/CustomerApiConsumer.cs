@@ -24,6 +24,8 @@ namespace BinaryMash.PactDemo.Consumer
             using (var request = new HttpRequestMessage(HttpMethod.Get, "/api/customers/" + id))
             {
                 request.Headers.Add("Accept", "application/json");
+                request.Headers.Add("Another", "header");
+
                 using (var response = httpClient.SendAsync(request))
                 {
 
@@ -57,6 +59,7 @@ namespace BinaryMash.PactDemo.Consumer
             using (var request = new HttpRequestMessage(HttpMethod.Get, uri))
             {
                 request.Headers.Add("Accept", "application/json");
+                request.Headers.Add("Another", "header");
 
                 //MOD-3 - extra header sent by consumer
                 //request.Headers.Add("PhilIsCool", "abc");

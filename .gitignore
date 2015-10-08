@@ -218,3 +218,4 @@ FakesAssemblies/
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
+src/BinaryMash.PactDemo.Consumer.Tests/pacts/consumer-customer_api.json

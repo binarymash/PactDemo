@@ -84,7 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddHeader.cs" />
+    <Compile Include="Middleware\TweakHeaders.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\VersionController.cs" />
     <Compile Include="Program.cs" />
