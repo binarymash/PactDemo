@@ -5,11 +5,11 @@ extra headers sent by consumer			| MOD-3	| pass			| pass			| pass
 more body content sent by consumer		|		|				|				|
 ----------------------------------------+-------+---------------+---------------+---------------
 fewer querystring sent by consumer		|		|				|				|
-fewer headers sent by consumer			|		|				|				|
+fewer headers sent by consumer			| MOD-6	| FAIL			| pass			|
 less body content sent by consumer		|		|				|				|
 ----------------------------------------+-------+---------------+---------------+---------------
 extra headers returned by provider		| MOD-2	| pass			| pass			| pass
 more body content returned by provider 	| MOD-1	| pass			| pass			|			
 ----------------------------------------+-------+---------------+---------------+--------------
-fewer headers returned by provider		| MOD-5	| pass			| FAIL			| pass (if not content type)
+fewer headers returned by provider		| MOD-5	| pass			| FAIL			| pass (if not content-type)
 less body content returned by provider	|		| FAIL			|				|

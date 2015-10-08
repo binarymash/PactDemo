@@ -26,6 +26,9 @@ namespace BinaryMash.PactDemo.Consumer
                 request.Headers.Add("Accept", "application/json");
                 request.Headers.Add("Another", "header");
 
+                //MOD-6 - consumer sends fewer headers
+                //request.Headers.Remove("Another");
+
                 using (var response = httpClient.SendAsync(request))
                 {
 
