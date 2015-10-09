@@ -10,9 +10,18 @@ namespace BinaryMash.PactDemo.Consumer.Tests
 
         public IMockProviderService MockProviderService { get; private set; }
 
-        public int MockServerPort => 1234;
+        public int MockServerPort
+        {
+            get { return 1234; }
+        }
 
-        public string MockProviderServiceBaseUri => $"http://localhost:{MockServerPort}";
+        public string MockProviderServiceBaseUri
+        {
+            get
+            {
+                return @"http://localhost:"+MockServerPort;
+            }
+        }
 
         public ConsumerCustomerApiPact()
         {

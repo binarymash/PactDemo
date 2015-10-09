@@ -9,7 +9,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests.Integration
         [Fact]
         public void GetVersion()
         {
-            var client = new CustomerApiConsumer("http://localhost:8080");
+            var client = new CustomerApiConsumer("http://localhost:8010");
             var version = client.GetVersion();
             Assert.Equal("1.2.3.4", version.Build);
         }
@@ -17,7 +17,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests.Integration
         [Fact]
         public void GetCustomer()
         {
-            var client = new CustomerApiConsumer("http://localhost:8080");
+            var client = new CustomerApiConsumer("http://localhost:8010");
             var customer = client.GetCustomer("tester");
             Assert.Equal("tester", customer.Id);
         }

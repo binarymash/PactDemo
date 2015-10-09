@@ -7,7 +7,7 @@ namespace BinaryMash.PactDemo.Provider
     {
         static void Main(string[] args)
         {
-            string baseUri = "http://localhost:8080";
+            string baseUri = "http://localhost:8010";
 
             Console.WriteLine("Starting web server");
             WebApp.Start<Startup>(baseUri);
