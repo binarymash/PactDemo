@@ -1,0 +1,7 @@
+Pact speficiation -  https://github.com/realestate-com-au/pact  
+
+.net implementation - https://github.com/SEEK-Jobs/pact-net
+Swift implementation - https://github.com/DiUS/pact-consumer-swift
+JVM implementation - https://github.com/DiUS/pact-jvm
+
+Pact Broker - https://github.com/bethesque/pact_broker
