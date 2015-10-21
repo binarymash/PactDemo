@@ -1,7 +1,12 @@
-Pact speficiation -  https://github.com/realestate-com-au/pact  
+Thoughtworks Tech Radar - https://www.thoughtworks.com/radar/tools/pact-pacto
+						- https://assets.thoughtworks.com/assets/technology-radar-jan-2015-en.pdf
+
+Pact specification -  https://github.com/realestate-com-au/pact  
 
 .net implementation - https://github.com/SEEK-Jobs/pact-net
 Swift implementation - https://github.com/DiUS/pact-consumer-swift
 JVM implementation - https://github.com/DiUS/pact-jvm
 
 Pact Broker - https://github.com/bethesque/pact_broker
+
+My sample code - https://github.com/binarymash/PactDemo

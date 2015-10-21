@@ -83,7 +83,7 @@
     <Compile Include="CustomerApiConsumerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="pacts\app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -98,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="logs\" />
-    <Folder Include="pacts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

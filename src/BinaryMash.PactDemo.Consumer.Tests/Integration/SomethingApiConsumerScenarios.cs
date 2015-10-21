@@ -6,7 +6,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests.Integration
     /// </summary>
     public class Temp
     {
-        [Fact]
+        [Fact(Skip="run manually")]
         public void GetVersion()
         {
             var client = new CustomerApiConsumer("http://localhost:8010");
@@ -14,7 +14,7 @@ namespace BinaryMash.PactDemo.Consumer.Tests.Integration
             Assert.Equal("1.2.3.4", version.Build);
         }
 
-        [Fact]
+        [Fact(Skip = "run manually")]
         public void GetCustomer()
         {
             var client = new CustomerApiConsumer("http://localhost:8010");

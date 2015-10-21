@@ -17,9 +17,9 @@ namespace BinaryMash.PactDemo.Provider.Tests
             using (var testServer = TestServer.Create<Startup>())
             {
                 pactVerifier = pactVerifier
-                    .ServiceProvider("Customer API", testServer.HttpClient)
-                    .HonoursPactWith("Consumer")
-                    .PactUri("../../../BinaryMash.PactDemo.Consumer.Tests/pacts/consumer-customer_api.json");
+                    .ServiceProvider("CustomerApi", testServer.HttpClient)
+                    .HonoursPactWith("iOS")
+                    .PactUri("../../../BinaryMash.PactDemo.Consumer.Tests/pacts/ios-customerapi.json");
 
                 pactVerifier.Verify();
             }
